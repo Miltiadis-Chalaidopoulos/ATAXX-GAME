@@ -1,0 +1,20 @@
+# Ensure Apache is rewriting URLs correctly for path_info
+RewriteEngine On
+RewriteBase /~iee2020187/ADISE24_ATAXX/
+
+# Enable PHP error reporting and logging
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+php_flag log_errors on
+php_value error_log /home/student/iee/2020/iee2020187/PHP_errors.log
+php_value error_reporting E_ALL
+
+# Apache 2.4+ syntax for allowing all HTTP methods
+<Limit GET HEAD POST PUT DELETE OPTIONS>
+   Require all granted
+</Limit>
+
+# Rewrite any requests that should go to ataxx.php
+RewriteRule ^ataxx.php$ /~iee2020187/ADISE24_ATAXX/ataxx.php [L]
+

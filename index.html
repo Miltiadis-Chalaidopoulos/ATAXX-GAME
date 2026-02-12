@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ATAXX ADISE</title>
+    <style>
+      body {
+          background-image: url('images/back1.gif'); /* Replace with your GIF path */
+          background-size: cover; /* Makes the GIF cover the entire page */
+          background-position: center; /* Centers the GIF */
+          background-repeat: no-repeat; /* Ensures the GIF doesn't repeat */
+          height: 100vh; /* Makes sure the body fills the entire viewport */
+          margin: 0; /* Removes default margins */
+          
+      }
+  </style>
+    <!-- Bootstrap core CSS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+   <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+   <link href="css/myataxx.css" rel="stylesheet">
+
+   <script src="bootstrap/jquery-3.2.1.min.js"></script> 
+   <script src="bootstrap/bootstrap.min.js"></script> 
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  <!-- Ensure jQuery is included first -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script> <!-- Include jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> <!-- Include jQuery UI CSS -->
+    
+
+   <script src="js/myataxx.js"></script>
+
+  </head>
+
+
+<body>
+
+  <header id="header" style="display: flex; justify-content: center; align-items: center; height: 100px;padding-top: 5%;padding-bottom: 5%;">
+    <!-- Logo -->
+    <img src="images/Ataxx_Logo.png" style="width: 400px; height: auto;" alt="Logo" id="logo">
+  </header>
+
+
+<div id="container">
+  <div id="ataxx_board">
+    <!-- Content of ataxx_board -->
+  </div>
+</div>
+
+<br></br>
+<div class="column">
+<div id='game_initializer'>
+  <input id="username" style="width: 400px; height: 40px; font-size: 20px; padding: 5px;position: relative;
+    top: -190px;">
+  <select id='pcolor' style="background-color: #5491c0;width: 60px; height: 40px; font-size: 20px; padding: 5px;position: relative;
+    top: -190px;">
+  <option value='W'>W</option>
+  <option value='B'>B</option>
+  </select>
+  <button id='ataxx_login' style="color:black;background-color:rgb(4, 124, 193);width: 100px; height: 40px; font-size: 20px; padding: 5px;position: relative;
+    top: -195px;"class='btn btn-primary'>ΕΙΣΟΔΟΣ</button><br>
+  </div>
+  
+  <div id='game_info' style='background-color: #5491c0c5;width: 400px;position: relative;
+    top: -190px;font-size: 20px;'>
+  </div>
+  
+<button id='ataxx_reset' style='color:black;background-color: rgb(4, 124, 193);position: relative;
+    top: -185px;'class='btn btn-primary'>ΕΠΑΝΕΚΙΝΗΣΗ</button><br>
+</div>
+
+<div id="scoreboard">
+  <p><strong><u>Scoreboard</u></strong></p>
+  <p id="white_count">White: 0</p>
+  <p id="black_count">Black: 0</p>
+  <p id="winner"></p>
+  </div>
+
+  <div class="howto">
+    <!-- Button to hover over -->
+    <button class="show-paragraph-button">?</button>
+
+    <!-- Paragraph that will be shown when the button is hovered -->
+    <p class="hidden-paragraph">Το Ataxx είναι ένα στρατηγικό παιχνίδι για δύο παίκτες,οι οποίοι εναλλάσσονται για να μετακινήσουν τα πιόνια τους. Κάθε κίνηση επιτρέπει στον παίκτη να μετακινηθεί προς οποιαδήποτε κατεύθυνση,είτε μία θέση δημιουργώντας ένα νέο πιόνι, είτε "πηδώντας" με ήδη υπάρχων πιόνι δύο θέσεις μακριά, καταλαμβάνοντας τετράγωνα που είναι κενά. Εάν καταλάβετε ένα τετράγωνο που είναι δίπλα σε αντίπαλο πιόνι, το πιόνι του αντικαθίσταται με το δικό σας.Σε κάθε γύρο, τα πιόνια «διασπείρονται» γύρω από το νέο τετράγωνο. Το παιχνίδι τελειώνει όταν όλα τα τετράγωνα είναι γεμάτα και νικητής είναι ο παίκτης με τα περισσότερα πιόνια στον πίνακα. Ο στόχος είναι να καταλάβετε όσο το δυνατόν περισσότερα τετράγωνα από τον αντίπαλο.</p>
+</div>
+</body>
+</html>
